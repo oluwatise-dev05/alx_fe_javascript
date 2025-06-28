@@ -1,9 +1,9 @@
 console.log("JS is connected!");
 const quotes = [
-  { text: "The only limit to our realization of tomorrow is our doubts of today.", category: "Motivation" },
-  { text: "Imagination is more important than knowledge.", category: "Creativity" },
-  { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", category: "Motivation" },
-  { text: "Design is not just what it looks like and feels like. Design is how it works.", category: "Design" },
+  { text: "Stay hungry, stay foolish.", category: "Motivation" },
+  { text: "Creativity is intelligence having fun.", category: "Creativity" },
+  { text: "Design is intelligence made visible.", category: "Design" },
+  { text: "Don’t watch the clock; do what it does. Keep going.", category: "Motivation" }
 ];
 
 function displayRandomQuote() {
@@ -35,10 +35,7 @@ function addQuote() {
     return;
   }
 
-  quotes.push({
-    text: newText,
-    category: newCategory
-  });
+  quotes.push({ text: newText, category: newCategory });
 
   quoteTextInput.value = "";
   quoteCategoryInput.value = "";
@@ -47,5 +44,4 @@ function addQuote() {
 }
 
 document.getElementById("newQuote").addEventListener("click", displayRandomQuote);
-
 
