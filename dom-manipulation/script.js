@@ -6,7 +6,7 @@ const quotes = [
   { text: "Design is not just what it looks like and feels like. Design is how it works.", category: "Design" },
 ];
 
-function showRandomQuote() {
+function displayRandomQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const quote = quotes[randomIndex];
 
@@ -43,8 +43,9 @@ function addQuote() {
   quoteTextInput.value = "";
   quoteCategoryInput.value = "";
 
-  showRandomQuote();
+  displayRandomQuote();
 }
 
-document.getElementById("newQuote").addEventListener("click", showRandomQuote);
+document.getElementById("newQuote").addEventListener("click", displayRandomQuote);
+
 
